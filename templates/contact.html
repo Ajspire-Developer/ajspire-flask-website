@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Contact | Ajspire Technologies{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container py-5">
+        <h1 class="fw-bold">Contact Us</h1>
+        <p class="lead mb-0">Tell us about your project or requirement.</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <h3 class="fw-bold">Let's Talk</h3>
+                <p class="text-secondary">
+                    Submit the form and our team can get back to you regarding your requirement.
+                </p>
+
+                <div class="d-flex gap-3 mb-3">
+                    <i class="bi bi-building text-primary fs-4"></i>
+                    <div><strong>Company</strong><br>Ajspire Technologies Pvt. Ltd.</div>
+                </div>
+                <div class="d-flex gap-3 mb-3">
+                    <i class="bi bi-envelope text-primary fs-4"></i>
+                    <div><strong>Email</strong><br>info@ajspire.com</div>
+                </div>
+                <div class="d-flex gap-3">
+                    <i class="bi bi-geo-alt text-primary fs-4"></i>
+                    <div><strong>Location</strong><br>Baramati, Maharashtra, India</div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="form-card p-4 p-md-5">
+                    <form method="POST" action="{{ url_for('contact') }}">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Name *</label>
+                                <input type="text" name="name" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email *</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" name="phone" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message *</label>
+                                <textarea name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary px-4" type="submit">
+                                    <i class="bi bi-send me-2"></i>Submit Enquiry
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

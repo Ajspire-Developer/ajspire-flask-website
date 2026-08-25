@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Services | Ajspire Technologies{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container py-5">
+        <h1 class="fw-bold">Our Services</h1>
+        <p class="lead mb-0">Technology services tailored to your requirements.</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            {% set services = [
+                ("bi-globe2", "Web Development", "Corporate websites, portals and custom web applications."),
+                ("bi-code-square", "Software Development", "Custom software solutions for business processes."),
+                ("bi-phone", "Application Development", "Modern application interfaces and business applications."),
+                ("bi-database", "Database Solutions", "Structured database design and data-driven applications."),
+                ("bi-cloud", "Cloud & Deployment", "Deployment and hosting solutions for modern applications."),
+                ("bi-headset", "Technology Support", "Technical support, maintenance and consulting.")
+            ] %}
+            {% for icon, title, description in services %}
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card h-100 p-4">
+                    <i class="bi {{ icon }} fs-1 text-primary"></i>
+                    <h4 class="mt-3">{{ title }}</h4>
+                    <p class="text-secondary">{{ description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

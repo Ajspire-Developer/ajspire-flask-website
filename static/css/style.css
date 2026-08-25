@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+}
+
+.hero-section {
+    background:
+        linear-gradient(135deg, rgba(7, 42, 105, 0.97), rgba(13, 110, 253, 0.88)),
+        radial-gradient(circle at top right, #5aa7ff, transparent 40%);
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 24px;
+}
+
+.feature-card,
+.form-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(20, 40, 80, 0.08);
+    border: 1px solid #eef1f6;
+}
+
+.feature-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(20, 40, 80, 0.12);
+}
+
+.page-header {
+    background: #eef5ff;
+}
+
+.login-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.form-control {
+    padding: 0.75rem 0.9rem;
+}
+
+footer {
+    margin-top: 80px;
+}

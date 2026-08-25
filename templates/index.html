@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Home | Ajspire Technologies{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="container py-5">
+        <div class="row align-items-center min-vh-75">
+            <div class="col-lg-7">
+                <span class="badge bg-light text-primary mb-3 px-3 py-2">Technology & Digital Solutions</span>
+                <h1 class="display-4 fw-bold text-white">Building Digital Solutions for Modern Businesses</h1>
+                <p class="lead text-white-50 mt-3">
+                    Ajspire Technologies Pvt. Ltd. delivers practical software, web and technology solutions
+                    designed to help businesses grow.
+                </p>
+                <div class="mt-4">
+                    <a href="{{ url_for('contact') }}" class="btn btn-warning btn-lg me-2">Get In Touch</a>
+                    <a href="{{ url_for('services') }}" class="btn btn-outline-light btn-lg">Our Services</a>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-5 mt-lg-0">
+                <div class="hero-card p-4 shadow-lg">
+                    <i class="bi bi-code-slash display-3 text-primary"></i>
+                    <h3 class="mt-3">Technology Partner</h3>
+                    <p class="text-secondary mb-0">Web applications, software development and digital technology services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">What We Do</h2>
+            <p class="text-secondary">Practical technology solutions for businesses and organizations.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card h-100 p-4">
+                    <i class="bi bi-globe2 fs-1 text-primary"></i>
+                    <h4 class="mt-3">Web Development</h4>
+                    <p>Responsive and scalable websites and web applications.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card h-100 p-4">
+                    <i class="bi bi-phone fs-1 text-primary"></i>
+                    <h4 class="mt-3">Application Development</h4>
+                    <p>Modern applications designed around real business requirements.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card h-100 p-4">
+                    <i class="bi bi-cloud-check fs-1 text-primary"></i>
+                    <h4 class="mt-3">Digital Solutions</h4>
+                    <p>Technology consulting and digital solutions that improve workflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
